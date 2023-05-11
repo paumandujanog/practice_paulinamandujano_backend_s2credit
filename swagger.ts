@@ -1,0 +1,14 @@
+import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import { INestApplication } from '@nestjs/common';
+
+export function setupSwagger(app: INestApplication): void {
+  const options = new DocumentBuilder()
+    .setTitle('API S2Credit')
+    .setDescription('API S2credit documentation of the endpoints consulted by the frontend')
+    .setVersion('1.0')
+    .addTag('API')
+    .build();
+
+  const document = SwaggerModule.createDocument(app, options);
+  SwaggerModule.setup('api', app, document);
+}

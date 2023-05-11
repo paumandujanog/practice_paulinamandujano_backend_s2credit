@@ -33,3 +33,10 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# Config
+.env
+packagee-lock.json
+
+# Typeorm config
+ormconfig.json
