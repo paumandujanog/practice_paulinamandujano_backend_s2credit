@@ -3,7 +3,7 @@ import { MigrationInterface, QueryRunner } from 'typeorm';
 export class InsertDataInUser1683846612648 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(
-      `INSERT INTO "User" (user_name,password) VALUES ('s2credit','98f43f47eef52d9fb6a5e98a91e317fb')`,
+      `INSERT INTO "User" (user_name,password) VALUES ('s2credit','61f77e3a91c37a841f32bbedc8349970')`,
     );
   }
 
